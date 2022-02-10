@@ -1,8 +1,16 @@
 .map {
   min-height: 60vh;
-  background-image: url("../../assets/desktop/image-map@2x.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  position: relative;
+  // background-image: url("../../assets/desktop/image-map@2x.png");
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
 }
 
 .address {
