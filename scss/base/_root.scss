@@ -36,13 +36,20 @@
   --space-m: 2rem;
 
   --max-main-width: 23.4375rem;
+
   --gallery-margin-top: 7.5rem;
   --gallery-margin-right: 1rem;
   --gallery-gap: 1.5rem;
   --gallery-h2-bottom: 1.25rem;
   --gallery-content-pading: 1.5rem;
+
   --footer-padding-top: 2.5rem;
   --footer-padding-right: 2rem;
+
+  --location-padding-top: 3rem;
+  --location-padding-right: 1rem;
+
+  --location-gap: 2rem;
 
   @media (min-width: 48em) {
     --fs-heading-xl: 4.375rem;
@@ -58,6 +65,11 @@
 
     --footer-padding-top: 3.5rem;
     --footer-padding-right: 2.5rem;
+
+    --location-padding-top: 5rem;
+    --location-padding-right: 2.5rem;
+
+    --location-gap: 5rem;
   }
 
   @media (min-width: 90em) {
@@ -87,5 +99,10 @@
 
     --footer-padding-top: 5rem;
     --footer-padding-right: 10.3125rem;
+
+    --location-padding-top: 6rem;
+    --location-padding-right: 10.3125rem;
+
+    --location-gap: 13.75rem;
   }
 }
