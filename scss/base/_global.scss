@@ -10,6 +10,11 @@ body {
   font-family: var(--ff-text);
 }
 
+.container {
+  max-width: var(--max-main-width);
+  margin: 0 auto;
+}
+
 /*-------------------
 COMMON
 --------------------*/
@@ -28,14 +33,52 @@ COMMON
   text-transform: uppercase;
 }
 
+.h2-like {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading-l);
+  line-height: var(--lh-heading-l);
+  font-weight: var(--fw-900);
+}
+
+.h2-dark {
+  color: var(--clr-black);
+}
+
+.h2-uppercase {
+  text-transform: uppercase;
+}
+
+.h2-light {
+  color: var(--clr-white);
+}
+
+.h3-like {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading-s);
+  line-height: var(--lh-heading-s);
+  font-weight: var(--fw-900);
+}
+
+.h3-light {
+  color: var(--clr-white);
+}
+
+.h3-uppercase {
+  text-transform: uppercase;
+}
+
 .p-like {
   font-size: var(--fs-body-m);
   line-height: var(--lh-body-m);
   font-weight: var(--fw-300);
 }
 
-.p-light {
+.p-dark {
   color: var(--clr-dark-grey);
+}
+
+.p-light {
+  color: var(--clr-white);
 }
 
 .btn {
@@ -61,6 +104,8 @@ COMMON
   height: 100%;
   width: 25%;
 
+  background-color: var(--clr-gold);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,17 +114,23 @@ COMMON
 .btn-arrow-right:after {
   content: url("../../assets/icon-arrow-right.svg");
   right: -25%;
-  background-color: var(--clr-gold);
 }
 
 .btn-arrow-left:after {
   content: url("../../assets/icon-arrow-left.svg");
   right: -25%;
-  background-color: var(--clr-gold);
 }
 
 .btn-dark {
   background-color: var(--clr-black);
+
+  &:hover {
+    background-color: var(--clr-gold);
+  }
+
+  &:hover:after {
+    background-color: var(--clr-black);
+  }
 }
 
 .hero {
@@ -94,10 +145,100 @@ COMMON
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
+
+    height: 100%;
   }
 
   &__p {
     margin: var(--space-m) 0;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-areas:
+    "img1"
+    "content1"
+    "img2"
+    "img3"
+    "content2";
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 3fr 1.2fr 1.5fr;
+  gap: var(--gallery-gap);
+  margin: var(--gallery-margin-top) var(--gallery-margin-right);
+
+  &__h2 {
+    margin-bottom: var(--gallery-h2-bottom);
+    max-width: 10ch;
+  }
+
+  &__img1 {
+    grid-area: img1;
+
+    background-image: url("../../assets/mobile/image-grid-1@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__img2 {
+    grid-area: img2;
+
+    background-image: url("../../assets/mobile/image-grid-2@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__img3 {
+    grid-area: img3;
+
+    background-image: url("../../assets/mobile/image-grid-3@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__content1 {
+    grid-area: content1;
+    max-width: 31ch;
+  }
+
+  &__content2 {
+    grid-area: content2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 0 var(--gallery-content-pading);
+
+    background-color: var(--clr-black);
+  }
+}
+
+.footer {
+  background-color: var(--clr-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: var(--footer-padding-top) var(--footer-padding-right);
+
+  &__p {
+    max-width: 36ch;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    img:hover {
+      cursor: pointer;
+      filter: invert(61%) sepia(42%) saturate(411%) hue-rotate(341deg)
+        brightness(96%) contrast(92%);
+    }
   }
 }
 
@@ -114,6 +255,32 @@ COMMON
     &__cta {
       transform: translateX(-25%);
     }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-areas:
+      "content1 img1 img1"
+      "img2 img2 img3"
+      "img2 img2 content2";
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-rows: minmax(20rem, 1fr) 1fr 1.3fr;
+
+    &__img1 {
+      background-image: url("../../assets/tablet/image-grid-1@2x.jpg");
+    }
+
+    &__img2 {
+      background-image: url("../../assets/tablet/image-grid-2@2x.jpg");
+    }
+
+    &__img3 {
+      background-image: url("../../assets/tablet/image-grid-3@2x.jpg");
+    }
+  }
+
+  .footer {
+    flex-direction: row;
   }
 }
 
@@ -167,6 +334,22 @@ COMMON
     &__p {
       max-width: 24ch;
       margin-top: 0;
+    }
+  }
+
+  .gallery {
+    grid-template-rows: minmax(25rem, 1fr) 0.8fr 1.3fr;
+
+    &__img1 {
+      background-image: url("../../assets/desktop/image-grid-1@2x.jpg");
+    }
+
+    &__img2 {
+      background-image: url("../../assets/desktop/image-grid-2@2x.jpg");
+    }
+
+    &__img3 {
+      background-image: url("../../assets/desktop/image-grid-3@2x.jpg");
     }
   }
 }
