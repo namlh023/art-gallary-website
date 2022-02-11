@@ -1,0 +1,108 @@
+:root {
+  --ff-heading: "Big Shoulders Display", cursive;
+  --ff-text: "Outfit", sans-serif;
+
+  --fw-300: 300;
+  --fw-900: 900;
+
+  --clr-gold: #d5966c;
+  --clr-black: #151515;
+  --clr-dark-grey: #444444;
+  --clr-white: #ffffff;
+
+  --fs-heading-xl: 3.75rem;
+  --lh-heading-xl: 0.91em;
+
+  --fs-heading-l: 3.125rem;
+  --lh-heading-l: 2.8125rem;
+
+  --fs-heading-m: 3.125rem;
+  --lh-heading-m: 2.8125rem;
+
+  --fs-heading-s: 2rem;
+  --lh-heading-s: 2rem;
+
+  --fs-body-m: 1.125rem;
+  --lh-body-m: 1.75rem;
+
+  --fs-body-s: 1rem;
+  --lh-body-s: 1.625rem;
+
+  --fs-button: 1.25rem;
+  --lh-button: 1.5rem;
+  --ls-button: 0.2272725rem;
+
+  --space-ms: 1.5rem;
+  --space-m: 2rem;
+
+  --max-main-width: 23.4375rem;
+
+  --gallery-margin-top: 7.5rem;
+  --gallery-margin-right: 1rem;
+  --gallery-gap: 1.5rem;
+  --gallery-h2-bottom: 1.25rem;
+  --gallery-content-pading: 1.5rem;
+
+  --footer-padding-top: 2.5rem;
+  --footer-padding-right: 2rem;
+
+  --location-padding-top: 3rem;
+  --location-padding-right: 1rem;
+
+  --location-gap: 2rem;
+
+  @media (min-width: 48em) {
+    --fs-heading-xl: 4.375rem;
+
+    --fs-heading-l: 3.4375rem;
+    --lh-heading-l: 3.125rem;
+
+    --max-main-width: 48rem;
+    --gallery-gap: 0.7rem;
+    --gallery-h2-bottom: 1.5rem;
+    --gallery-content-pading: 1.75rem;
+    --gallery-margin-right: 2.5rem;
+
+    --footer-padding-top: 3.5rem;
+    --footer-padding-right: 2.5rem;
+
+    --location-padding-top: 5rem;
+    --location-padding-right: 2.5rem;
+
+    --location-gap: 5rem;
+  }
+
+  @media (min-width: 90em) {
+    --fs-heading-xl: 6rem;
+
+    --fs-heading-l: 4.375rem;
+    --lh-heading-l: 4.375rem;
+
+    --fs-heading-m: 3.75rem;
+    --lh-heading-m: 3.75rem;
+
+    --fs-heading-s: 2.25rem;
+    --lh-heading-s: 2.25rem;
+
+    --fs-body-m: 1.375rem;
+    --lh-body-m: 2rem;
+
+    --fs-body-s: 1.125rem;
+    --lh-body-s: 1.75rem;
+
+    --max-main-width: 90rem;
+    --gallery-margin-top: 11.25rem;
+    --gallery-gap: 2rem;
+    --gallery-h2-bottom: 2rem;
+    --gallery-content-pading: 3rem;
+    --gallery-margin-right: 10.25rem;
+
+    --footer-padding-top: 5rem;
+    --footer-padding-right: 10.3125rem;
+
+    --location-padding-top: 6rem;
+    --location-padding-right: 10.3125rem;
+
+    --location-gap: 13.75rem;
+  }
+}

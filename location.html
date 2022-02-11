@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+  <body>
+    <main class="main container">
+      <div class="map" id="map">
+        <a class="map__btn btn btn-dark btn-arrow-left" href="/index"
+          >Back to Home</a
+        >
+      </div>
+      <div class="address">
+        <h1 class="h2-like h2-light h2-uppercase">Our Location</h1>
+        <div>
+          <h2 class="h3-like h3-gold h3-uppercase">99 King Street</h2>
+          <p class="p-like p-light address__p">
+            Newport<br />RI 02840<br />United States of America
+          </p>
+          <p class="p-like p-light">
+            Our newly opened gallery is located near the Edward King House on 99
+            King Street, the Modern Art Gallery is free to all visitors and open
+            seven days a week from 8am to 9pm.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer-gold container">
+      <h3 class="h3-like h3-dark h3-uppercase">
+        Modern <br />
+        Art Gallery
+      </h3>
+      <p class="p-like p-very-dark footer__p">
+        The Modern Art Gallery is free to all visitors and open seven days a
+        week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </p>
+      <ul class="social-links social-links--dark">
+        <li>
+          <img src="./assets/icon-facebook.svg" alt="" aria-hidden="true" />
+        </li>
+        <li>
+          <img src="./assets/icon-instagram.svg" alt="" aria-hidden="true" />
+        </li>
+        <li>
+          <img src="./assets/icon-twitter.svg" alt="" aria-hidden="true" />
+        </li>
+      </ul>
+    </footer>
+    <!-- <script src="./js/location.js"></script> -->
+  </body>
+</html>
