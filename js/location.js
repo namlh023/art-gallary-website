@@ -2,6 +2,8 @@ var map = L.map("map", { zoomControl: false }).setView([51.505, -0.09], 13);
 
 var marker = L.marker([51.5, -0.09]).addTo(map);
 
+console.log("dfdf", process.env.MAPBOX_ACCESS_TOKEN);
+
 L.tileLayer(
   `https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=${process.env.MAPBOX_ACCESS_TOKEN}`,
   {

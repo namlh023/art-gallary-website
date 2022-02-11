@@ -1,9 +1,10 @@
 .map {
-  min-height: 60vh;
+  min-height: 37.5rem;
   position: relative;
-  // background-image: url("../../assets/desktop/image-map@2x.png");
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%;
+  background-image: url("../../assets/mobile/image-map@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 
   &__btn {
     position: absolute;
@@ -27,7 +28,16 @@
 }
 
 @media (min-width: 48em) {
+  .map {
+    background-image: url("../../assets/tablet/image-map@2x.png");
+  }
   .address {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 90em) {
+  .map {
+    background-image: url("../../assets/desktop/image-map@2x.png");
   }
 }
